@@ -3,28 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Base64 Redirect</title>
-  <script>
-    // Function to decode Base64 and redirect to the new domain with the decoded value as a fragment
-    function redirectToNewDomain() {
-      // Get the Base64 content from the URL
-      const base64Content = window.location.search.substring(1); // Get the content after the question mark
-
-      if (base64Content) {
-        // Decode the Base64 content
-        const decodedValue = atob(base64Content);
-
-        // Redirect to the new domain with the decoded value as a fragment
-        window.location.href = `https://redirectdomain.com#${decodedValue}`;
-      } else {
-        console.error('Base64 content not found in the URL');
-      }
-    }
-
-    // Call the function on page load
-    window.onload = redirectToNewDomain;
-  </script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Life</title>
 </head>
-<body>
+<body bgcolor="#14FFB0">
+<canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
 </body>
-</html>
+<script 
